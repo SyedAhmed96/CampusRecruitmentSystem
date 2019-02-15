@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="42dp"
+                android:textColor="@color/primary_text"
+                android:text="Post a Job"/>
+
+            <EditText
+                android:id="@+id/edittext_jobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Title"
+                />
+
+            <EditText
+                android:id="@+id/edittext_postedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Posted By"
+                />
+
+            <EditText
+                android:id="@+id/edittext_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Skills"
+                />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/publish_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="publish"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>
+

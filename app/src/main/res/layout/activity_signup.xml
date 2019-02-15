@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#DCE775">
+
+        <FrameLayout
+            android:id="@+id/FrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/iam_textView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Iam a :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="66dp"
+                android:background="@color/colorPrimary"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/FrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student" />
+
+                <RadioButton
+                    android:id="@+id/rbCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company" />
+
+                <RadioButton
+                    android:id="@+id/rbAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- End of first Part -->
+
+
+
+    <!-- Student Linear layout -->
+
+    <LinearLayout
+        android:id="@+id/studentLinearLayout"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailStudentEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Email Address"
+            android:inputType="textEmailSubject"/>
+
+        <EditText
+            android:id="@+id/passwordStudentEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Password"
+            android:inputType="numberPassword"/>
+
+
+        <EditText
+            android:id="@+id/studentNameEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Student Name"
+            android:inputType="textPersonName"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/studentSignUp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:background="@drawable/rounded_border"
+                    />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Layout for Company -->
+
+    <LinearLayout
+        android:id="@+id/companyLinearLayout"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailCompanyEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Company ID"
+            android:inputType="textEmailSubject"/>
+
+        <EditText
+            android:id="@+id/passwordCompanyEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Company Password"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:id="@+id/companyNameEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Company Name"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:layout_below="@id/companyNameEditText"
+            android:id="@+id/companyAddressEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Company Address"
+            android:inputType="textPostalAddress"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/companySignUp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:background="@drawable/rounded_border"
+                tools:ignore="DuplicateIds" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
